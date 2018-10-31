@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="ColorSwitchStyle" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorControlActivated">@color/ltbluegreen</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/eightiesgrey</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/ltbluegreen</item>
+
+
+        <item name="android:background">@color/softpurple</item>
+
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+    </style>
+
+
+
+</resources>

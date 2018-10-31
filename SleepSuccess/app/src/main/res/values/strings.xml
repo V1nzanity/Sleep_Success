@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sleep Success</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottomNote">Alarm will go off 15 minutes before bedtime and upon wakeup.
+    </string>
+    <color name="butter">#FEDC3D</color>
+    <color name="black">#000000</color>
+    <color name="azure">#01ABAA</color>
+    <color name="peace">#FEA680</color>
+
+</resources>

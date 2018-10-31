@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/softpurple"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.SleepSuccess.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/alarmBF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Benjamin Franklin"
+        android:textColor="@android:color/white"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switchBF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:checked="false"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/alarmBG"
+        app:layout_constraintEnd_toEndOf="@+id/alarmBG"
+        app:layout_constraintTop_toBottomOf="@+id/timeBF"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/alarmBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Bill Gates"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeBG"
+        app:layout_constraintStart_toStartOf="@+id/timeBG"
+        app:layout_constraintTop_toBottomOf="@+id/switchBF" />
+
+    <Switch
+        android:id="@+id/switchBG"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="8dp"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/alarmEM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/alarmBG"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/alarmEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="Elon Musk"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeEM"
+        app:layout_constraintStart_toStartOf="@+id/timeEM" />
+
+    <Switch
+        android:id="@+id/switchEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/alarmJB"
+        app:layout_constraintEnd_toEndOf="@+id/alarmJB"
+        app:layout_constraintTop_toBottomOf="@+id/timeEM" />
+
+    <TextView
+        android:id="@+id/timeBF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:text="10:00 PM - 5:00 AM"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchBF"
+        app:layout_constraintStart_toStartOf="@+id/alarmBF"
+        app:layout_constraintTop_toBottomOf="@+id/alarmBF" />
+
+    <TextView
+        android:id="@+id/timeBG"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:text="12:00 AM - 7:00 AM"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchBG"
+        app:layout_constraintEnd_toEndOf="@+id/timeBF"
+        app:layout_constraintTop_toBottomOf="@+id/alarmBG" />
+
+    <TextView
+        android:id="@+id/timeEM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="73dp"
+        android:text="1:00 AM - 7:00 AM"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchEM"
+        app:layout_constraintStart_toStartOf="@+id/timeJB"
+        app:layout_constraintTop_toBottomOf="@+id/alarmBG" />
+
+    <TextView
+        android:id="@+id/alarmJB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Jeff Bezos"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeJB"
+        app:layout_constraintStart_toStartOf="@+id/timeJB"
+        app:layout_constraintTop_toBottomOf="@+id/switchEM" />
+
+    <TextView
+        android:id="@+id/timeJB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="10:00 PM - 5:00 AM"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchJB"
+        app:layout_constraintEnd_toEndOf="@+id/alarmTE"
+        app:layout_constraintTop_toBottomOf="@+id/alarmJB" />
+
+    <Switch
+        android:id="@+id/switchJB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/alarmTE"
+        app:layout_constraintStart_toStartOf="@+id/timeJB"
+        app:layout_constraintTop_toBottomOf="@+id/timeJB" />
+
+    <TextView
+        android:id="@+id/alarmTE"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Thomas Edison"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeTE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/switchJB" />
+
+    <TextView
+        android:id="@+id/timeTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="11:00 PM - 4:00 AM"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchTE"
+        app:layout_constraintEnd_toEndOf="@+id/alarmTE" />
+
+    <Switch
+        android:id="@+id/switchTE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/alarmTC"
+        app:layout_constraintStart_toStartOf="@+id/alarmTC" />
+
+    <TextView
+        android:id="@+id/alarmTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:text="Tim Cook"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/clockTC"
+        app:layout_constraintStart_toStartOf="@+id/clockTC" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bottomNote"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/clockTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="9:30 PM - 4:30 AM"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/switchTC"
+        app:layout_constraintStart_toStartOf="@+id/timeTE" />
+
+    <Switch
+        android:id="@+id/switchTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginBottom="46dp"
+        android:text="Set"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/clockTC" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</android.support.constraint.ConstraintLayout>
