@@ -1,3 +1,13 @@
+/*
+Author: Chris V.
+vinzant8892@gmail.com
+
+This app creates a wakeup alarm and bedtime reminder
+based upon the sleep habits of various successful people.
+This app is not intended for commercial purposes and all names belong
+to the original owner.
+ */
+
 package com.example.android.SleepSuccess;
 
 import android.app.Activity;
@@ -8,20 +18,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-
-import com.example.android.sleepgeniusfinal.R;
-
+import com.example.android.sleepsuccess.R;
 import java.util.ArrayList;
 import java.util.Calendar;
-/*
-Author: Chris V.
-vinzant8892@gmail.com
 
-This app creates a wakeup alarm and bedtime reminder
-based upon the sleep habits of various successful people.
-This app is not intended for commercial purposes and all names belong
-to the original owner.
- */
 
 public class MainActivity extends Activity {
 
